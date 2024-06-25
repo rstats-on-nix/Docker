@@ -3,7 +3,7 @@ FROM ubuntu:latest
 LABEL org.opencontainers.image.licenses="MIT" \
       org.opencontainers.image.source="https://github.com/rstats-on-nix/Docker" \
       org.opencontainers.image.vendor="RStats on Nix" \
-      org.opencontainers.image.ref.name:"rix" \
+      org.opencontainers.image.ref.name="rix" \
       org.opencontainers.image.authors="Bruno Rodrigues <bruno@brodrigues.co>, Philipp Baumann <baumann-philipp@protonmail.com>"
 
 RUN apt update -y
