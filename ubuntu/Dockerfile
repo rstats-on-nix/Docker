@@ -22,4 +22,4 @@ RUN curl -O https://raw.githubusercontent.com/b-rodrigues/rix/master/inst/extdat
 
 RUN nix-build
 
-CMD nix-shell
+CMD nix-shell --run R
