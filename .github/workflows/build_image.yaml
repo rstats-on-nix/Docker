@@ -39,7 +39,7 @@ jobs:
         with:
           context: ./ubuntu/
           push: true
-          tags: latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation
