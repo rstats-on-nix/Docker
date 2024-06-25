@@ -17,4 +17,8 @@ RUN curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/
 # Adds Nix to the path, as described by the Determinate Systems installer's documentation
 ENV PATH="${PATH}:/nix/var/nix/profiles/default/bin"
 
-CMD ["/bin/sh"]
+RUN curl -O https://raw.githubusercontent.com/b-rodrigues/rix/master/inst/extdata/default.nix
+
+RUN nix-build
+
+CMD nix-shell
